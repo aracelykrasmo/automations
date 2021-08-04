@@ -26,7 +26,7 @@ for i in range(10):
         time.sleep(2)
         pyautogui.press('enter')
     except:
-        print('Element ' + str(i) + ' is not an image.')
+        print('Element: ' + str(i) + ' is not an image.')
 
 time.sleep(4)
 driver.quit()
