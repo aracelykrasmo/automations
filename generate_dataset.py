@@ -8,11 +8,11 @@ driver = webdriver.Chrome(executable_path="files/chromedriver")  # Optional argu
 driver.get('https://www.google.com.mx/imghp?hl=en&tab=ri&ogbl')
 # time.sleep(5)  # Let the user actually see something!
 search_box = driver.find_element_by_name('q')
-search_box.send_keys('rostro pinturas')
+search_box.send_keys('human and face drawings')
 search_box.submit()
 time.sleep(1)  # Let the user actually see something!
 
-for i in range(10):
+for i in range(50):
     try:
         element = driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div[' + str(i) + ']/a[1]/div[1]/img')
         element.click()
